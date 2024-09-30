@@ -1,5 +1,5 @@
 .movie-page {
-    color: #FFF;
+    color: #fff;
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -8,7 +8,7 @@
 
 .movie-page svg {
     font-size: 1.5rem;
-    color: #F7D354;
+    color: #f7d354;
 }
 
 .movie-page .movie-card {
@@ -53,6 +53,38 @@
     padding-bottom: 10rem;
 }
 
-.description p{
+.description p {
     line-height: 1.4rem;
+}
+
+@media (max-width: 850px) {
+    .movie-page {
+        font-size: 15px;
+    }
+
+    .movie-page p {
+        font-size: 1rem;
+    }
+
+    .movie-details {
+        display: block;
+        justify-self: center;
+        align-items: center;
+        margin-left: 4.3rem;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .info.description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-page .movie-card img {
+        width: 20rem;
+    }
 }
