@@ -42,12 +42,22 @@
     color: #f7d354;
 }
 
+@media (max-width: 1285px) {
+    #navbar {
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 850px) {
     #navbar {
-        display: flexbox;
+        display: flex;
         justify-content: space-between;
-        padding: 0.7rem;
-        background-color: #121212;
+        padding: 1rem;
+        gap: 2px;
+    }
+
+    #navbar input {
+        padding: 0rem 0.5rem;
     }
 
     #navbar h2 {
@@ -56,5 +66,48 @@
 
     #navbar input {
         padding: 0 0.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar h2 {
+        font-size: 1.4rem;
+    }
+
+    #navbar form {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #navbar input {
+        flex: 1;
+        padding: 0.2rem 0.6rem;
+    }
+}
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+
+    #navbar h2 {
+        font-size: 1.4rem;
+    }
+
+    #navbar form {
+    }
+
+    #navbar input {
+        width: 80%;
+        padding: 0.2rem 0.5rem;
+    }
+
+    #navbar button {
+        justify-content: center;
+        align-items: center;
+        width: 20%;
     }
 }
