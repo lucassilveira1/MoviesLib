@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaComment } from "react-icons/fa";
 
 const imageUrl = import.meta.env.VITE_IMG;
 
