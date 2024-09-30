@@ -70,7 +70,11 @@
         display: block;
         justify-self: center;
         align-items: center;
-        margin-left: 4.3rem;
+        margin: 1rem;
+    }
+
+    .movie-details p {
+        text-align: right;
     }
 
     .info {

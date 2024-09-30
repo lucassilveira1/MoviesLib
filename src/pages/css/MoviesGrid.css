@@ -61,6 +61,11 @@
     color: #f7d354;
 }
 
+@media (max-width: 1285px) {
+    .container {
+    }
+}
+
 @media (max-width: 850px) {
     .movies-container div {
         color: #fff;
